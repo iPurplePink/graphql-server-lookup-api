@@ -14,9 +14,11 @@
   "dependencies": {
     "@apollo/federation": "^0.16.8",
     "apollo-server": "^2.15.0",
-    "graphql": "^15.1.0"
+    "graphql": "^15.1.0",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.155",
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
