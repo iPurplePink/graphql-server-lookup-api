@@ -6,6 +6,8 @@ const server = new ApolloServer({
   schema: buildFederatedSchema(federatedSchema)
 });
 
-const port = 8080;
+const port = 8081;
 
-server.listen({ port: port }, () => console.log(`🚀 Server ready at ${port}`));
+server.listen(port).then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`);
+});
