@@ -23,5 +23,5 @@ $ yarn start # or $ npm run start
 ### 3. Open your browser and go to the link:
 
 ```
-http://localhost:8080/graphql
+http://localhost:8081
 ```
