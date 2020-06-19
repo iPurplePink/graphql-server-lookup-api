@@ -8,7 +8,7 @@
 $ git clone {repository url}
 ```
 
-### 2. Install package depnedencies
+### 2. Install package dependencies
 
 ```bash
 $ yarn install # or $ npm install
@@ -20,7 +20,7 @@ $ yarn install # or $ npm install
 $ yarn start # or $ npm run start
 ```
 
-### 3. Open your browser
+### 3. Open your browser and go to the link:
 
 ```
 http://localhost:8080/graphql
