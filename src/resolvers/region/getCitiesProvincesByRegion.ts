@@ -1,16 +1,15 @@
 import citiesProvinces from '../../data/citiesProvinces';
-import { IFieldResolver } from 'apollo-server';
-
-interface Request {
-  id: number;
-}
+import sortBy from 'lodash/sortBy';
 
 const getCitiesProvinces = (parent: any, args: any) => {
   let id = args.id;
   if (parent) {
     id = parent.id;
   }
-  return citiesProvinces.filter(cityProvince => cityProvince.regionId === id);
+  return sortBy(
+    citiesProvinces.filter(cityProvince => cityProvince.regionId === id),
+    cityProvince => cityProvince.name
+  );
 };
 
 export default getCitiesProvinces;

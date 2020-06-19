@@ -8,6 +8,7 @@ const skillCompetencySchema = gql`
 
   extend type Query {
     skillCompetencies: [SkillCompetencies]
+    skillCompetenciesByKeyword(keyword: String!): [SkillCompetencies]
   }
 `;
 
