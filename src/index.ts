@@ -1,13 +1,11 @@
-import express from 'express';
-import { ApolloServer } from 'apollo-server-express';
-import schema from './schema';
-import resolvers from './resolvers';
+import { ApolloServer } from 'apollo-server';
+import { buildFederatedSchema } from '@apollo/federation';
+import federatedSchema from './federatedSchema';
 
-const server = new ApolloServer({ typeDefs: schema, resolvers });
+const server = new ApolloServer({
+  schema: buildFederatedSchema(federatedSchema)
+});
 
-const app = express();
 const port = 8080;
 
-server.applyMiddleware({ app });
-
-app.listen({ port: port }, () => console.log(`🚀 Server ready at ${port}`));
+server.listen({ port: port }, () => console.log(`🚀 Server ready at ${port}`));

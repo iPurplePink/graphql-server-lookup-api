@@ -1,11 +1,11 @@
 import citiesProvinces from '../../data/citiesProvinces';
-import { IFieldResolver } from 'apollo-server-express';
+import { IFieldResolver } from 'apollo-server';
 
 interface Request {
   id: number;
 }
 
-const getCitiesProvinces: IFieldResolver<Request, Request> = (parent, args) => {
+const getCitiesProvinces = (parent: any, args: any) => {
   let id = args.id;
   if (parent) {
     id = parent.id;
