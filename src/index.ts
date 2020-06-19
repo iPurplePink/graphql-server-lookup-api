@@ -3,7 +3,8 @@ import { buildFederatedSchema } from '@apollo/federation';
 import federatedSchema from './federatedSchema';
 
 const server = new ApolloServer({
-  schema: buildFederatedSchema(federatedSchema)
+  schema: buildFederatedSchema(federatedSchema),
+  subscriptions: false
 });
 
 const port = 8081;
