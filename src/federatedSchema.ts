@@ -13,26 +13,40 @@ import regionSchema from './schema/region';
 import sexResolvers from './resolvers/sex';
 import sexSchema from './schema/sex';
 
+import skillCompetencyResolvers from './resolvers/skillCompetency';
+import skillCompetencySchema from './schema/skillCompetency';
+
+import skillCompetencyLevelResolvers from './resolvers/skillCompetencyLevel';
+import skillCompetencyLevelSchema from './schema/skillCompetencyLevel';
+
 const federatedSchema = [
   {
-    typeDefs: employmentTypeSchema,
-    resolvers: employmentTypeResolvers
+    resolvers: employmentTypeResolvers,
+    typeDefs: employmentTypeSchema
   },
   {
-    typeDefs: impactAreaSchema,
-    resolvers: impactAreaResolvers
+    resolvers: impactAreaResolvers,
+    typeDefs: impactAreaSchema
   },
   {
-    typeDefs: jobLevelSchema,
-    resolvers: jobLevelResolvers
+    resolvers: jobLevelResolvers,
+    typeDefs: jobLevelSchema
   },
   {
-    typeDefs: regionSchema,
-    resolvers: regionResolvers
+    resolvers: regionResolvers,
+    typeDefs: regionSchema
   },
   {
-    typeDefs: sexSchema,
-    resolvers: sexResolvers
+    resolvers: sexResolvers,
+    typeDefs: sexSchema
+  },
+  {
+    resolvers: skillCompetencyResolvers,
+    typeDefs: skillCompetencySchema
+  },
+  {
+    resolvers: skillCompetencyLevelResolvers,
+    typeDefs: skillCompetencyLevelSchema
   }
 ];
 
