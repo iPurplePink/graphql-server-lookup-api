@@ -1,4 +1,4 @@
-# Graphql Server LookupAPI
+# Typescript Graphql Server LookupAPI
 
 ## Development Setup
 
@@ -20,7 +20,9 @@ $ yarn install # or $ npm install
 $ yarn start # or $ npm run start
 ```
 
-### 3. Open your browser and go to the link:
+### 3. Graphql Playground
+
+Open your browser and go to the link:
 
 ```
 http://localhost:8081

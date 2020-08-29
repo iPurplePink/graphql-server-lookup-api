@@ -1,5 +1,5 @@
 {
-  "name": "graphql-server-lookup-api",
+  "name": "typescript-graphql-server-lookup-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,12 @@
     "start": "nodemon --exec ts-node src/index.ts",
     "build": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "apollo",
+    "typescript",
+    "graphql",
+    "api"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
